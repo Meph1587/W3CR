@@ -48,19 +48,15 @@ count = 0
 
 #read 
 while True:
+    
+    res = CR.CheckAndGetData(count) 
 
-    if count < -50:
+    if res == None:
         break;
 
     else:
-        res = CR.CheckAndGetData(count) 
-
-        if res == None:
-            break;
-
-        else:
-            print (res) 
-            count = count-4
+        print (res) 
+        count = count-4
 
 
 
